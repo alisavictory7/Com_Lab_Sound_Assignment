@@ -743,6 +743,60 @@ section
     color: rgb(184, 32, 173); /* Matches the theme colors */
 }
 
+.photo_attribution2 {
+    position: absolute; /* Position relative to the parent container */
+    bottom: 10px; /* Place it near the bottom of the slide */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    z-index: 10; /* Ensure it appears above other elements */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better visibility */
+    padding: 5px 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.photo_attribution2 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.photo_attribution2 a:hover {
+    color: rgb(184, 32, 173); /* Matches the theme colors */
+}
+
+.photo_attribution a:hover {
+    color: rgb(184, 32, 173); /* Matches the theme colors */
+}
+
+.photo_attribution3 {
+    position: absolute; /* Position relative to the parent container */
+    bottom: 10px; /* Place it near the bottom of the slide */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    z-index: 10; /* Ensure it appears above other elements */
+    background-color: rgba(0, 0, 0, 0.9); /* Add a semi-transparent background for better visibility */
+    padding: 5px 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.photo_attribution3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.photo_attribution3 a:hover {
+    color: rgb(184, 32, 173); /* Matches the theme colors */
+}
+
+
+
 /*********************************
 6. Featured Album
 *********************************/
