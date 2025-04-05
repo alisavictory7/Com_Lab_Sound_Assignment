@@ -767,10 +767,6 @@ section
     color: rgb(184, 32, 173); /* Matches the theme colors */
 }
 
-.photo_attribution a:hover {
-    color: rgb(184, 32, 173); /* Matches the theme colors */
-}
-
 .photo_attribution3 {
     position: absolute; /* Position relative to the parent container */
     bottom: 10px; /* Place it near the bottom of the slide */
