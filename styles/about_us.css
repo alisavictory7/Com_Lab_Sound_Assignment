@@ -13,7 +13,8 @@
 6. Discs
 7. Artist
 8. Milestones
-9. Footer
+9. Contact
+10. Footer
 
 
 ******************************/
@@ -1115,8 +1116,162 @@ section
 	margin-top: 24px;
 }
 
+
 /*********************************
-9. Footer
+9. Contact
+*********************************/
+
+.contact
+{
+	padding-top: 101px;
+	padding-bottom: 105px;
+}
+.contact_title
+{
+	font-size: 36px;
+	color: #FFFFFF;
+	line-height: 1.2;
+}
+.contact_form
+{
+	display: block;
+	width: 100%;
+	margin-top: 59px;
+}
+.contact_input
+{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #343434;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	border-bottom: solid 3px transparent;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.contact_input:hover,
+.contact_input:focus
+{
+	border-bottom: solid 3px #de4f32;
+}
+.contact_textarea
+{
+	height: 161px;
+	padding-top: 18px;
+}
+.contact_form input:not(:last-child)
+{
+	margin-bottom: 20px;
+}
+.contact_input::-webkit-input-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.contact_input:-moz-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.contact_input::-moz-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+} 
+.contact_input:-ms-input-placeholder
+{ 
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.contact_input::input-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.contact_button
+{
+	width: 173px;
+	height: 50px;
+	background: #de4f32;
+	color: #FFFFFF;
+	font-size: 14px;
+	border: solid 3px #de4f32;
+	outline: none;
+	cursor: pointer;
+	margin-top: 39px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.contact_button:hover
+{
+	background: transparent;
+	color: #de4f32;
+}
+.contact_text
+{
+	margin-top: 30px;
+}
+.contact_info_list
+{
+	margin-top: 84px;
+	padding-left: 13px;
+}
+.contact_info_list ul li
+{
+	font-size: 16px;
+	color: #aaaaaa;
+}
+.contact_info_list ul li:not(:last-of-type)
+{
+	margin-bottom: 24px;
+}
+.contact_info_list ul li > div:first-child > div
+{
+	width: 96px;
+	color: #de4f32;
+}
+.social
+{
+	margin-top: 42px;
+	left: -5px;
+	padding-left: 13px;
+}
+.social ul li:not(:last-of-type)
+{
+	margin-right: 26px;
+}
+.social ul li a i
+{
+	font-size: 15px;
+	padding: 5px;
+	color: #de4f32;
+}
+.social ul li a i:hover
+{
+	color: #FFFFFF;
+}
+
+
+/*********************************
+10. Footer
 *********************************/
 
 .footer

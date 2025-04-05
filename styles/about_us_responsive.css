@@ -137,6 +137,10 @@
 	{
 		padding-left: 50px;
 	}
+	.contact_col
+	{
+		margin-top: 80px;
+	}
 }
 
 /************
@@ -230,6 +234,10 @@
 	.menu_log_reg
 	{
 		display: block;
+	}
+	.contact_title
+	{
+		font-size: 30px;
 	}
 	.artist
 	{
