@@ -58,21 +58,31 @@
 		</div>
 	</div>
 
-	<div class="mySlides">
-		<img onclick="play()" src="Act 1 Scene 1.jpg">
-		<audio id="audio-1" src="Act 1 Scene 1.mp3" ></audio>
-	</div>
-	
-	<div class="mySlides">
-		<img onclick="play()" src="Act 1 Scene 2.jpg">
-		<audio id="audio-2" src="Act 1 Scene 2.mp3" ></audio>
-	</div>
-	</div>
-	
-	
-	<div onclick="plusDivs(-1)">Re</div>
-	
-	<div onclick="plusDivs(1)">Av</div>
+	<div class="slideshow-container">
+		<div class="mySlides">
+		  <img src="images/A1S1.jpg" alt="Act 1 Scene 1">
+		  <audio id="audio-1" src="files/Act 1 Scene 1.mp3"></audio>
+		  <div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+		  </div>
+		</div>
+		
+		<div class="mySlides">
+		  <img src="images/A1S2.jpg" alt="Act 1 Scene 2">
+		  <audio id="audio-2" src="files/Act 1 Scene 2.mp3"></audio>
+		  <div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+		  </div>
+		</div>
+		
+		<!-- Navigation buttons with better styling -->
+		<div class="slideshow-nav">
+		  <div class="slide-nav prev-button" onclick="plusDivs(-1)">Previous</div>
+		  <div class="slide-nav next-button" onclick="plusDivs(1)">Next</div>
+		</div>
+	  </div>	
 
 	<!-- Footer -->
 
