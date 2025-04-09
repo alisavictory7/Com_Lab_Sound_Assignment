@@ -77,7 +77,64 @@
 		  </div>
 		</div>
 		
-		<!-- Navigation buttons with better styling -->
+		<div class="mySlides">
+			<img src="images/A2S1.jpg" alt="A2S1">	
+			<audio id="audio-2" src="files/Act 2 Scene 1.mp3"></audio>
+			<div class="play-button">
+			  <div class="play-icon"></div>
+			  <div class="pause-icon"></div>
+			</div>
+		  </div>
+		<!-- Path A Slides -->
+		<div class="mySlides path-a" style="display: none;">
+			<img src="images/A3SA1.jpg" alt="Act 3 Scene 1A ">
+			<audio id="audio-a1" src="files/Act 3 Scene A1.mp3"></audio>
+			<div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+			</div>
+		</div>
+		
+		<div class="mySlides path-a" style="display: none;">
+			<img src="images/A3SA2.jpg" alt="Act 3 Scene 2A">
+			<audio id="audio-a2" src="files/Act 3 Scene A2.mp3"></audio>
+			<div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+			</div>
+		</div>
+		
+		<!-- Path B Slides -->
+		<div class="mySlides path-b" style="display: none;">
+			<img src="images/A3SB1.jpg" alt="Act 3 Scene 1B">
+			<audio id="audio-b1" src="files/Act 3 Scene B1.mp3"></audio>
+			<div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+			</div>
+		</div>
+		
+		<div class="mySlides path-b" style="display: none;">
+			<img src="images/A3SB2.jpg" alt="Act 3 Scene 2B">
+			<audio id="audio-b2" src="files/Act 3 Scene B2.mp3"></audio>
+			<div class="play-button">
+			<div class="play-icon"></div>
+			<div class="pause-icon"></div>
+			</div>
+		</div>
+		
+		<!-- Decision container -->
+		<div class="decision-container" id="decisionContainer" style="display: none;">
+			<div class="decision-box">
+			<h2>What will you do next?</h2>
+			<div class="decision-options">
+				<button class="decision-btn" onclick="makeDecision('A')">Option A: Choose Another Path</button>
+				<button class="decision-btn" onclick="makeDecision('B')">Option B: Continue Painting</button>
+			</div>
+			</div>
+		</div>
+		
+		<!-- Navigation buttons-->
 		<div class="slideshow-nav">
 		  <div class="slide-nav prev-button" onclick="plusDivs(-1)">Previous</div>
 		  <div class="slide-nav next-button" onclick="plusDivs(1)">Next</div>

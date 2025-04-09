@@ -1335,3 +1335,46 @@ section
   .play-button {
 	animation: fadeIn 0.5s;
   }
+
+  .decision-container {
+	max-width: 800px;
+	margin: 20px auto;
+	background-color: #2b2b2b;
+	border-radius: 4px;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	animation: fadeIn 0.8s;
+  }
+  
+  .decision-box h2 {
+	color: #FFFFFF;
+	margin-bottom: 25px;
+  }
+  
+  .decision-options {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .decision-btn {
+	background-color: #de4f32;
+	color: white;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s ease;
+  }
+  
+  .decision-btn:hover {
+	background-color: #c43f22;
+	transform: translateY(-2px);
+  }
+  
+  /* Hide path-specific slides initially */
+  .mySlides.path-a, .mySlides.path-b {
+	display: none;
+  }
