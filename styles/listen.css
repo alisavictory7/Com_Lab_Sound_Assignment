@@ -1166,65 +1166,51 @@ section
 	padding: 20px;
   }
   
-  .slideshow-container {
+  /* Additional fixes for the slideshow */
+	.slideshow-container {
+	margin-top: 120px; /* Add space below header */
+	margin-bottom: 60px;
 	position: relative;
 	max-width: 800px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
   }
   
-  .mySlides {
-	display: none;
-  }
-  
-  img {
-	vertical-align: middle;
-	width: 100%;
-  }
-  
-  .prev, .next {
+  /* Ensure images are clickable */
+  .mySlides img {
 	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 24px;
-	transition: 0.3s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
-  .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+  /* Add a hover effect to indicate clickability */
+  .mySlides img:hover {
+	opacity: 0.9;
+  }
+  
+  /* Styling for navigation */
+  .prev, .next {
+	background-color: rgba(222, 79, 50, 0.7); /* Using site theme color */
+	padding: 16px;
   }
   
   .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(222, 79, 50, 1);
   }
   
+  /* Style the dot container */
   .dot-container {
-	text-align: center;
-	padding: 10px;
-	background: #ddd;
+	background: #2b2b2b; /* Dark background to match site theme */
+	border-radius: 0 0 4px 4px;
   }
   
   .dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 5px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+	background-color: #6d6d6d;
   }
   
-  .active, .dot:hover {
-	background-color: #717171;
+  .dot.active, .dot:hover {
+	background-color: #de4f32; /* Theme color */
   }
-  
   .fade {
 	animation-name: fade;
 	animation-duration: 1s;
@@ -1233,4 +1219,162 @@ section
   @keyframes fade {
 	from {opacity: .4}
 	to {opacity: 1}
+  }
+
+.mySlides {
+	position: relative;
+	display: none;
+  }
+  
+  .mySlides img {
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+  }
+  
+  .mySlides.playing img {
+	border: 3px solid #de4f32;
+  }
+  
+  .slideshow-nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+  }
+  
+  .slide-nav {
+	background-color: #de4f32;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .slide-nav:hover {
+	background-color: #c43f22;
+  }
+
+
+  .mySlides {
+	position: relative;
+	display: none;
+  }
+  
+  /* Play button overlay */
+  .play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  .play-button:hover {
+	background-color: rgba(222, 79, 50, 0.8); /* Using your theme color */
+  }
+  
+  /* Triangle play icon */
+  .play-icon {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 25px;
+	border-color: transparent transparent transparent #ffffff;
+	margin-left: 5px; /* Slight adjustment to center it visually */
+  }
+  
+  /* Pause icon (two vertical bars) */
+  .pause-icon {
+	display: none;
+	width: 30px;
+	height: 30px;
+	position: relative;
+  }
+  
+  .pause-icon:before, .pause-icon:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 30px;
+	background-color: #ffffff;
+  }
+  
+  .pause-icon:before {
+	left: 5px;
+  }
+  
+  .pause-icon:after {
+	right: 5px;
+  }
+  
+  /* Show pause icon when playing */
+  .mySlides.playing .play-icon {
+	display: none;
+  }
+  
+  .mySlides.playing .pause-icon {
+	display: block;
+  }
+  
+  /* Fade in animation for the play button */
+  @keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+  }
+  
+  .play-button {
+	animation: fadeIn 0.5s;
+  }
+
+  .decision-container {
+	max-width: 800px;
+	margin: 20px auto;
+	background-color: #2b2b2b;
+	border-radius: 4px;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	animation: fadeIn 0.8s;
+  }
+  
+  .decision-box h2 {
+	color: #FFFFFF;
+	margin-bottom: 25px;
+  }
+  
+  .decision-options {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .decision-btn {
+	background-color: #de4f32;
+	color: white;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s ease;
+  }
+  
+  .decision-btn:hover {
+	background-color: #c43f22;
+	transform: translateY(-2px);
+  }
+  
+  /* Hide path-specific slides initially */
+  .mySlides.path-a, .mySlides.path-b {
+	display: none;
   }
