@@ -284,7 +284,7 @@ $(document).ready(function()
 			$(this).jPlayer("setMedia", {
 				title:"Everything I Wanted",
 					artist:"Taha's Sister",
-					mp3:"files/Everything I Wanted.mp3"
+					mp3:"files/Everything_I_Wanted.mp3"
 			});
 		},
 		play: function() { // To avoid multiple jPlayers playing together.
